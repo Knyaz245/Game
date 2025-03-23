@@ -1,0 +1,105 @@
+@font-face {
+    font-family: JosefinSans-Bold;
+    src: url(../font/JosefinSans-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: JosefinSans-Medium;
+    src: url(../font/JosefinSans-Medium.ttf);
+    font-weight: 500;
+}
+:root{
+    --font-bold:JosefinSans-Bold;
+    --font-medium:JosefinSans-Medium;
+    --text-color:#826F8C;
+    --title-color:#EB8382;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.btn {
+    width: 207px;
+    height: 50px;
+    display: block;
+    background: linear-gradient(to right, #4499D9, #6E6CC1);
+    border-radius: 25px;
+    font-family: var(--font-medium);
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 20px;
+    background-size: 200% 100%;
+    background-position: left center;
+    transition: background-position 0.5s ease-in-out, box-shadow 0.3s linear;
+}
+.btn:hover {
+    background-position: right center;
+    box-shadow: 0 3px 10px 0 #9b9b9b;
+}
+.header-navigation__container{
+    display: flex;
+}
+.header-container{
+    width: 1167px;
+    height: 78px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header-list{
+    display: flex;
+    column-gap: 42px;
+    margin-top: 35px;
+}
+.header-btn{
+    margin-left: 55px;
+}
+.header-link{
+    position: relative;
+    font-family: var(--font-medium);
+    font-size: 18px;
+    line-height: 24px;
+    color: #446381;
+}
+.header-logo__box{
+    margin-top: 15px;
+}
+.header-logo__box img{
+    width: 200px;
+}
+.header{
+    background-image: url(../img/download.png);
+    width: 100%;
+    height: 850px;
+}
+.header-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    border-radius: 8px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #4499d9, #4499d9, #7367be);
+    transition: width 0.4s ease-in-out;
+}
+
+.header-link:hover::before{
+    width: 100%;
+}
+.hero-container{
+    width: 1167px;
+    margin-top: 56px;
+    height: 735px;
+    display: flex;
+}
